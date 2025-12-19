@@ -21,6 +21,7 @@ podTemplate(
     stage('Build') {
         container('maven') {
             script {
+                checkout scm
                 echo "i'm inside contaienr maven"
                 mavenBuild.build() 
             }
