@@ -1,4 +1,4 @@
-@Library('Kubernetes@master') _
+@Library('K8s@master') _
 podTemplate(
   agentContainer: 'maven',
   agentInjection: true,
